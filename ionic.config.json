@@ -1,0 +1,7 @@
+{
+  "name": "revampBros",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
