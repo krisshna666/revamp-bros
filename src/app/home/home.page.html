@@ -1,20 +1,171 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+F<ion-content>
+  <div class="interior-section">
+    <div class="interior-text">
+      <div class="interior-header">
+        <span class="revamp-text">Revamp</span>Bros
+      </div>
+      <div class="interior-content">
+        Do you have an old sofa that needs reupholstering? A dining table that
+        requires refinishing or a cabinet that needs repairing? Revamp Bros has
+        got you covered. We specialize in giving a new lease of life to the
+        furniture you already have in your home.
+        <div class="schedule-call-btn">
+          <ion-button>Schedule call</ion-button>
+          <div class="caption-text">*Currently Available In Delhi NCR</div>
+          <div class="carousel-btn">
+            <img src="../../assets/images/carousel.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="board-section">
+      <div class="inner-board-section">
+        <div>
+          <span class="number-text">20+</span> Year <br />
+          Experience
+        </div>
+        <div class="vertical-line"></div>
+        <div>
+          <span class="number-text">5K+</span> furniture<br />
+          Customized
+        </div>
+        <div class="vertical-line"></div>
+        <div>
+          <span class="number-text">50+</span> Customization<br />
+          Option
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="interior-home">
+    <div class="left-container">
+      <img src="../../assets/images/interior-home.png" />
+    </div>
+    <div class="right-container">
+      <div class="interior-home-header">We create your home more aesthetic</div>
+      <p>Revamp Bros Give You Back New Feeling Of Your Old Furniture</p>
+      <div class="lorem-flex-header">
+        <div><img src="../../assets/images/chevron-checklist.png" /></div>
+        <div class="lorem-header">Lorim Ipsum</div>
+      </div>
+      <p>
+        Sometimes features require a short description. This can be detailed
+        description
+      </p>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      <div class="lorem-flex-header">
+        <div><img src="../../assets/images/chevron-checklist.png" /></div>
+        <div class="lorem-header">Development of Furniture Modelss</div>
+      </div>
+      <p>
+        Sometimes features require a short description. This can be detailed
+        description
+      </p>
+    </div>
+  </div>
+  <div class="our-products">
+    <div class="our-products-left-container">
+      <div class="our-products-header">Our Products</div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <div>Give Your Old Furniture A New Design And Life</div>
+      <div class="check-all">
+        Check All <img src="../../assets/images/Vector.png" />
+      </div>
+    </div>
+
+    <div class="our-products-right-container">
+      <div>
+        <div>
+          <img src="../../assets/images/chair.png" />
+        </div>
+        <div><img src="../../assets/images/tv-unit.png" /></div>
+      </div>
+      <div class="overlay-image-container">
+        <img src="../../assets/images/sofa.png" />
+        <img
+          class="overlay-img"
+          src="../../assets/images/overlay-rect-image.png"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="story-section">
+    <div class="story-inner-section">
+      <img src="../../assets/images/story-room.png" height="429" />
+      <div class="story-header">
+        <h2>The Story Behind Revamp <span class="red-text">Bros</span></h2>
+        <div class="story-para">
+          Do you have an old sofa that needs reupholstering? A dining table that
+          requires refinishing or a cabinet that needs repairing? Revamp Bros
+          has got you covered. We specialize in giving a new lease of life to
+          the furniture you already have in your home. We believe furniture
+          doesn't have to be discarded because it looks old or worn out. We can
+          transform your furniture into something beautiful, stylish, and
+          functional again. Every piece of furniture deserves to be treated with
+          care and attention to detail.
+        </div>
+      </div>
+    </div>
+    <div class="story-lower-section">
+      That's why we work closely with you to understand your vision and
+      preferences so that we can deliver precisely what you're looking for.
+      Renewing your furniture with us is not only a cost-effective and
+      environmentally friendly option, but we'll also make sure your furniture
+      reflects your unique style and personality. Whether it's a family heirloom
+      or a sentimental piece, we understand the value of preserving the past
+      while giving it a fresh new look. So, why not give your furniture a second
+      chance and transform your home with our expert furniture renewal services?
+      Contact us today to schedule a consultation, and let's get started!
+    </div>
+  </div>
+  <div class="Gallery-section">
+    <div class="gallery-header">Gallery</div>
+    <div class="row">
+      <div class="column">
+        <img src="../../assets/images/gallery1.png" class="gallery1" />
+        <img src="../../assets/images/gallery3.png" class="gallery2" />
+      </div>
+      <div class="column">
+        <img src="../../assets/images/gallery7.png" class="gallery3" />
+        <img src="../../assets/images/gallery5.png" class="gallery4" />
+        <img src="../../assets/images/gallery6.png" class="gallery5" />
+      </div>
+      <div class="column">
+        <img src="../../assets/images/gallery2.png" class="gallery6" />
+        <img src="../../assets/images/gallery4.png" class="gallery7" />
+      </div>
+      <!-- <div class="column">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/ocean.jpg" style="width:100%">
+    
+      </div> -->
+    </div>
+  </div>
+  <div class="testimonials-section">
+    <div class="testimonials-header">TESTIMONIALS</div>
+    <div class="reviews-header">Our Client Reviews</div>
+    <div class="client-section">
+      <div class="client-box" *ngFor="let i of clients;let ind=index">
+        <img
+          class="chevron-left"
+          *ngIf="ind===0"
+          src="../../assets/images/chevron-left.png"
+        />
+        <img
+          class="chevron-right"
+          *ngIf="ind===2"
+          src="../../assets/images/chevron-right.png"
+        />
+        <img class="client-image" [src]="i.image" />
+
+        <div class="client-name">{{i.name}}</div>
+        <div class="client-role">{{i.role}}</div>
+        <div class="client-review">{{i.review}}</div>
+        <img src="../../assets/images/stars.png" />
+      </div>
+    </div>
+  </div>
+  <div class="footer-section">
+    <app-footer></app-footer>
   </div>
 </ion-content>

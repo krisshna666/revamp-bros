@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira&display=swap");
+:host {
+  .left-header-section {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    gap: 5px;
+  }
+  .right-header-section {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    p {
+      font-family: "Saira", sans-serif;
+      color: #1f1f1f;
+    }
+    p:first-child {
+      color: #ea3242;
+    }
+  }
+  .toolbar-container {
+    display: flex !important;
+    justify-content: space-around;
+  }
+}
+.header-container {
+  box-shadow: none;
+  background-color: white !important;
+}

@@ -1,0 +1,61 @@
+:host {
+  * {
+    font-family: "Saira", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .footer-section {
+    background-color: #efefef;
+    padding: 50px;
+    margin-top: 20px;
+  }
+  .flex-section {
+    display: flex;
+    justify-content: space-around;
+  }
+  .revamp-text {
+    display: block;
+  }
+  ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .first-container {
+    width: 40%;
+  }
+  .product-and-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  ul {
+    line-height: 30px;
+    li:first-child {
+      font-family: "Saira", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    li:nth-child(2),
+    .li:nth-child(3) {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+  .flex-media-section {
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+  }
+  .flex-policy-and-condition-section {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+
+    float: right;
+    .vertical-line {
+      border-right: 1px solid black;
+    }
+  }
+}

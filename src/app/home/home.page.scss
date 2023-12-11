@@ -1,27 +1,301 @@
-#container {
+@import url("https://fonts.googleapis.com/css2?family=Saira&display=swap");
+:host {
+  .interior-section {
+    background-image: url("../../assets/images/interior-furniture.png");
+    background-size: cover;
+    background-position: center;
+    height: 90%; /* Set the height to 100% to cover the entire container */
+    width: 100%; /* Set the width to 100% to cover the entire container */
+    position: relative; /* Ensure proper positioning */
+    overflow: hidden;
+  }
+  .interior-text {
+    top: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .interior-header {
+    font-family: "Saira", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    position: relative;
+    color: #ffffff;
+  }
+  .caption-text {
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .board-section {
+    position: absolute;
+    bottom: -40px;
+    // padding: 20px;
+    z-index: 1000;
+    background-color: black;
+    width: 80%;
+    height: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+
+    div {
+      color: #ffffff;
+      height: 100%;
+    }
+    .vertical-line {
+      border-left: 2px solid white;
+    }
+    .number-text {
+      display: block;
+      font-family: "Saira", sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+    }
+  }
+  .inner-board-section {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-family: "Saira", sans-serif;
+    font-weight: 400;
+  }
+  .schedule-call-btn {
+    position: relative;
+    top: 80%;
+    line-height: 70px;
+    ion-button {
+      --background: #ffffff66;
+      --width: 254px;
+    }
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .carousel-btn {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .revamp-text:after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 26%;
+    height: 40px;
+    width: 30%;
+    border: solid 5px #cb1829;
+    border-color: #cb1829 transparent transparent transparent;
+    border-radius: 50%;
+  }
+  .interior-content {
+    color: white;
+    // z-index: 1000;
+    padding-top: 5%;
+    height: 120px;
+    width: 716px;
+    font-family: "Saira", sans-serif;
+    font-size: 20px;
+  }
+  .interior-home {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+  }
+  .interior-home-header,
+  .our-products-header {
+    font-family: "Saira", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+  }
+
+  .right-container {
+    width: 50%;
+    p {
+      font-family: "Saira", sans-serif;
+      font-size: 20px;
+      width: 90%;
+    }
+  }
+  .left-container {
+    width: 40%;
+  }
+  .lorem-header {
+    font-family: "Saira", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .lorem-flex-header {
+    display: flex;
+  }
+  .our-products {
+    padding: 40px;
+  }
+  .our-products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    width: 100%;
+  }
+  .overlay-image-container {
+    position: relative;
+  }
+  .overlay-img {
+    position: absolute;
+    top: -20%;
+    left: 10%;
+  }
+  .check-all {
+    margin-top: 25%;
+    font-family: "Saira", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .our-products-left-container {
+    width: 20%;
+  }
+  .our-products-right-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+  }
+  .story-inner-section {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+    // justify-content: space-around;
+  }
+  h2,
+  .red-text {
+    font-family: "Saira", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+  }
+  .red-text {
+    color: #ea3242;
+  }
+  .story-header {
+    width: 40%;
+  }
+  .story-para,
+  .story-lower-section {
+    font-family: "Saira", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .story-lower-section {
+    display: flex;
+    margin: auto;
+    width: 85%;
+  }
+}
+
+//CSS FOR GALLERY
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  // width: 100%;
+}
+.gallery-section {
+  display: flex;
+  justify-content: center;
+}
+.gallery .gallery4 {
+  height: 30% !important;
+  width: 100% !important;
+}
+.gallery2 {
+  height: 40% !important;
+  width: 100% !important;
+}
+.gallery7 {
+  height: 40% !important;
+}
+.gallery-header {
+  font-family: "Saira", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+//testimonials section css
+.testimonials-section {
   text-align: center;
-
+}
+.testimonials-header {
+  font-family: "Saira", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ea3242;
+}
+.reviews-header {
+  font-family: "Saira", sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  color: #1e1e1e;
+  margin-bottom: 50px;
+}
+.client-section {
+  display: flex;
+  justify-content: space-around;
+}
+.client-box {
+  position: relative;
+  background-color: #ea324233;
+  padding: 40px;
+  border-radius: 18px;
+  width: 25%;
+}
+.client-name {
+  font-family: "Saira", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.chevron-left {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 30%;
+  left: -50px;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.chevron-right {
+  position: absolute;
+  right: -50px;
+  top: 30%;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.client-role {
+  font-family: "Saira", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
 }
-
-#container a {
-  text-decoration: none;
+.client-review {
+  font-family: "Saira", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.client-image {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
